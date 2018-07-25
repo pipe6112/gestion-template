@@ -221,7 +221,7 @@
                 <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
                     <li class="no-padding active">
                         <a class="collapsible-header waves-effect waves-grey active">
-                            <i class="material-icons">desktop_windows</i>Layouts
+                            <i class="material-icons">desktop_windows</i>Mantenimiento
                             <i class="nav-drop-icon material-icons">keyboard_arrow_right</i>
                         </a>
                         <div class="collapsible-body">
@@ -252,95 +252,64 @@
         </aside>
         <main class="mn-inner">
             <div class="row">
-                <div class="col s12">
-                    <div class="page-title">Equipos y Fichas Técnicas</div>
-                </div>
-                <div class="col s12 m12 l12">
-                    <div class="card">
-                        <div class="card-content">
-                            <form id="example-form" action="#">
-                                <div>
-                                    <h3>Equipos</h3>
-                                    <!-- seccion primer formulario -->
-                                    <section>
-                                        <form action="example-form" action="#">
-                                            <div class="wizard-content">
-                                                <div class="row">
-                                                    <div class="col m6">
-                                                        <div class="row">
-
-                                                            <div class="input-field col m6 s12">
-                                                                <label for="nombre_equipo">Nombre Equipo</label>
-                                                                <input id="nombre_equipo" name="nombre_equipo" type="text" class="required validate">
-                                                            </div>
-                                                            <div class="input-field col m6 s12">
-                                                                <label for="serial">Serial</label>
-                                                                <input id="serial" name="serial" type="text" class="required validate">
-                                                            </div>
-                                                            <div class="input-field col m6 s12">
-                                                                <label for="modelo">Modelo</label>
-                                                                <input id="modelo" name="modelo" type="text" class="required validate">
-                                                            </div>
-                                                            <div class="input-field col m6 s12">
-                                                                <label for="marca">Marca</label>
-                                                                <input id="marca" name="marca" type="text" class="required validate">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col m6">
-                                                        <div class="row">
-                                                            <div class="input-field col m6 s12">
-                                                                <label for="placa_sena">Placa Sena</label>
-                                                                <input id="placa_sena" name="placa_sena" type="text">
-                                                            </div>
-                                                            <div class="input-field col m6 s12">
-                                                                <select name="estado" id="estado">
-                                                                    <option value="">Seleccione el estado...</option>
-                                                                    <option value="activo">Activo</option>
-                                                                    <option value="inactivo">Inactivo</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col m6 s12">
-                                                                <select name="estado" id="estado">
-                                                                    <option value="">Seleccione el Tipo de Equipo...</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="input-field col m6 s12">
-                                                                <select name="estado" id="estado">
-                                                                    <option value="">Seleccione la Linea del Equipo...</option>
-
-                                                                </select>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </section>
-                                    <!-- seccion primer formulario -->
-                                    <h3>Ficha tecnica</h3>
-                                    <section>
-                                        <div class="wizard-content">
-
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Tipo Equipo</span>
+                        <br>
+                        <form class="example-form" action="#" method="post">
+                            <div class="row">
+                                <div class="col m6">
+                                    <div class="row">
+                                        <div class="input-field col m6 s12">
+                                            <label for="nombre_equipo">Nombre Equipo</label>
+                                            <input id="nombre_equipo" name="nombre_equipo" type="text" class="required validate">
                                         </div>
-                                    </section>
-                                    <!-- seccion segundo formulario -->
-                                    <h3>Tipo Equipo</h3>
-                                    <section>
-                                        <div class="wizard-content">
-
+                                        <div class="input-field col m6 s12">
+                                            <label for="serial">Serial</label>
+                                            <input id="serial" name="serial" type="text" class="required validate">
                                         </div>
-                                    </section>
+                                        <div class="input-field col m6 s12">
+                                            <label for="modelo">Modelo</label>
+                                            <input id="modelo" name="modelo" type="text" class="required validate">
+                                        </div>
+                                        <div class="input-field col m6 s12">
+                                            <label for="marca">Marca</label>
+                                            <input id="marca" name="marca" type="text" class="required validate">
+                                        </div>
+                                    </div>
                                 </div>
-                            </form>
-                        </div>
+                                <div class="col m6">
+                                    <div class="row">
+                                        <div class="input-field col m6 s12">
+                                            <label for="placa_sena">Placa Sena</label>
+                                            <input id="placa_sena" name="placa_sena" type="text">
+                                        </div>
+                                        <div class="input-field col m6 s12">
+                                            <select name="estado" id="estado">
+                                                <option value="">Seleccione el estado...</option>
+                                                <option value="activo">Activo</option>
+                                                <option value="inactivo">Inactivo</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col m6 s12">
+                                            <select name="tipo_equipo" id="tipo_equipo">
+                                                <option value="">Seleccione el Tipo de Equipo...</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-field col m6 s12">
+                                            <select name="linea_equipo" id="linea_equipo">
+                                                <option value="">Seleccione la Linea del Equipo...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="waves-effect waves-light btn green m-b-xs" style="float: right">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </main>
-        </div>
-        </div>
         <!-- <div class="left-sidebar-hover"></div> -->
 
         <!-- Javascripts -->
@@ -350,9 +319,6 @@
         <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
         <script src="assets/js/alpha.min.js"></script>
         <script src="assets/plugins/jquery-validation/jquery.validate.min.js"></script>
-        <script src="assets/plugins/jquery-steps/jquery.steps.min.js"></script>
-        <script src="assets/js/pages/form-wizard.js"></script>
-        <script src="assets/js/custom.js"></script>
 
 </body>
 
